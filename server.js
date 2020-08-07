@@ -15,7 +15,7 @@ client.on('message', message => {
     // If the message is "ping"
     if (message.content === '!Server') {
       // Send "pong" to the same channel
-      message.channel.send('https://www.youtube.com/');
+      message.channel.send('https://elchupaworld.aternos.me/');
       
     }
   });
