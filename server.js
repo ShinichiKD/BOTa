@@ -2,7 +2,7 @@
 
 
 const Discord = require('discord.js');
-
+const { Client, MessageAttachment } = require('discord.js');
 
 const client = new Discord.Client();
 
@@ -48,7 +48,7 @@ client.on('message', message => {
       const attachment8 = new MessageAttachment(buffer8, 'Torohealth');
       
       // Send the attachment in the message channel with a content
-      message.channel.send(`${message.author}, LISTA DE MODS:`, attachment);
+      message.channel.send(`${message.author}, LISTA DE MODS:`, attachment,ttachment2,ttachment3,ttachment4,ttachment5,ttachment6,ttachment7,ttachment8);
     }
   });
 
