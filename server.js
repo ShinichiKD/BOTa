@@ -7,7 +7,7 @@ const { Client, MessageAttachment } = require('discord.js');
 const client = new Discord.Client();
 
 client.on('ready', () => {
-  console.log('Version 1.0.6');
+  console.log('Version 1.0.7');
 });
 
 
@@ -23,7 +23,7 @@ client.on('message', message => {
     // If the message is "ping"
     if (message.content === '!comandos') {
       // Send "pong" to the same channel
-      message.channel.send('!server | !mods');
+      message.channel.send('( !server | !mods )');
       
     }
   });
@@ -56,7 +56,14 @@ client.on('message', message => {
       const attachment8 = new MessageAttachment(buffer8, 'Torohealth');
       
       // Send the attachment in the message channel with a content
-      message.channel.send(`${message.author}, LISTA DE MODS:`, attachment + attachment2 + attachment3 + attachment4 +  attachment5 + attachment6 + attachment7 + attachment8);
+      message.channel.send(`${message.author}, LISTA DE MODS:`, attachment);
+      message.channel.send(attachment2);
+      message.channel.send(attachment3);
+      message.channel.send(attachment4);
+      message.channel.send(attachment5);
+      message.channel.send(attachment6);
+      message.channel.send(attachment7);
+      message.channel.send(attachment8);
     }
   });
 
