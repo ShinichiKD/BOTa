@@ -7,7 +7,7 @@ const { Client, MessageAttachment } = require('discord.js');
 const client = new Discord.Client();
 
 client.on('ready', () => {
-  console.log('Version 1.0.3');
+  console.log('Version 1.0.4');
 });
 
 
@@ -41,7 +41,7 @@ client.on('message', message => {
 
       const attachment2 = new MessageAttachment(buffer2, 'AppleSkin');
       const attachment3 = new MessageAttachment(buffer3, 'FallingTree');
-      const attachment4 = new MessageAttachment(buffe4r, 'VoxelMap');
+      const attachment4 = new MessageAttachment(buffer4, 'VoxelMap');
       const attachment5 = new MessageAttachment(buffer5, 'Ironchest');
       const attachment6 = new MessageAttachment(buffer6, 'Jei');
       const attachment7= new MessageAttachment(buffer7, 'OptiForge');
