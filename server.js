@@ -7,7 +7,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 client.on('ready', () => {
-  console.log('Version 1.0.0');
+  console.log('Version 1.0.1');
 });
 
 
@@ -20,11 +20,13 @@ client.on('message', message => {
     }
   });
 
+  const fs = require('fs');
   client.on('message', message => {
     
     if (message.content === '!mods') {
      
       const buffer = fs.readFileSync('./OptiFine-1.16.1_HD_U_G2.jar');
+
       const buffer2 = fs.readFileSync('./AppleSkin-mc1.16.1-forge-1.0.14.jar');
       const buffer3 = fs.readFileSync('./FallingTree-1.16.1-2.2.1.jar');
       const buffer4 = fs.readFileSync('./forgemod_VoxelMap-1.10.7_for_1.16.1.jar');
@@ -35,6 +37,8 @@ client.on('message', message => {
   
       
       const attachment = new MessageAttachment(buffer, 'OptiFine');
+
+
       const attachment2 = new MessageAttachment(buffer2, 'AppleSkin');
       const attachment3 = new MessageAttachment(buffer3, 'FallingTree');
       const attachment4 = new MessageAttachment(buffe4, 'VoxelMap');
