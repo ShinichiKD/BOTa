@@ -7,7 +7,7 @@ const { Client, MessageAttachment } = require('discord.js');
 const client = new Discord.Client();
 
 client.on('ready', () => {
-  console.log('Version 1.0.7');
+  console.log('Version 1.0.8');
 });
 
 
@@ -44,16 +44,16 @@ client.on('message', message => {
       const buffer8 = fs.readFileSync('./torohealth-1.16.1-forge-2.jar');
   
       
-      const attachment = new MessageAttachment(buffer, 'OptiFine');
+      const attachment = new MessageAttachment(buffer, 'OptiFine-1.16.1_HD_U_G2.jar');
 
 
-      const attachment2 = new MessageAttachment(buffer2, 'AppleSkin');
-      const attachment3 = new MessageAttachment(buffer3, 'FallingTree');
-      const attachment4 = new MessageAttachment(buffer4, 'VoxelMap');
-      const attachment5 = new MessageAttachment(buffer5, 'Ironchest');
-      const attachment6 = new MessageAttachment(buffer6, 'Jei');
-      const attachment7= new MessageAttachment(buffer7, 'OptiForge');
-      const attachment8 = new MessageAttachment(buffer8, 'Torohealth');
+      const attachment2 = new MessageAttachment(buffer2, 'AppleSkin-mc1.16.1-forge-1.0.14.jar');
+      const attachment3 = new MessageAttachment(buffer3, 'FallingTree-1.16.1-2.2.1.jar');
+      const attachment4 = new MessageAttachment(buffer4, 'forgemod_VoxelMap-1.10.7_for_1.16.1.jar');
+      const attachment5 = new MessageAttachment(buffer5, 'ironchest-1.16.1-11.0.1.jar');
+      const attachment6 = new MessageAttachment(buffer6, 'jei-1.16.1-7.0.0.6.jar');
+      const attachment7= new MessageAttachment(buffer7, 'OptiForge-MC1.16.1-0.1.7.jar');
+      const attachment8 = new MessageAttachment(buffer8, 'torohealth-1.16.1-forge-2.jar');
       
       // Send the attachment in the message channel with a content
       message.channel.send(`${message.author}, LISTA DE MODS:`, attachment);
