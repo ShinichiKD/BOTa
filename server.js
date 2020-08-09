@@ -7,7 +7,7 @@ const { Client, MessageAttachment } = require('discord.js');
 const client = new Discord.Client();
 
 client.on('ready', () => {
-  console.log('Version 1.0.9');
+  console.log('Version 1.1.0');
 });
 
 
@@ -33,7 +33,7 @@ client.on('message', message => {
     
     if (message.content === '!mods') {
      
-      const buffer = fs.readFileSync('./mods');
+      const buffer = fs.readFileSync('./mods.zip');
 
       //const buffer2 = fs.readFileSync('./AppleSkin-mc1.16.1-forge-1.0.14.jar');
        //const buffer3 = fs.readFileSync('./FallingTree-1.16.1-2.2.1.jar');
@@ -44,7 +44,7 @@ client.on('message', message => {
        //const buffer8 = fs.readFileSync('./torohealth-1.16.1-forge-2.jar');
   
       
-      const attachment = new MessageAttachment(buffer, 'Mods');
+      const attachment = new MessageAttachment(buffer, 'mods.zip');
 
 
        //const attachment2 = new MessageAttachment(buffer2, 'AppleSkin-mc1.16.1-forge-1.0.14.jar');
