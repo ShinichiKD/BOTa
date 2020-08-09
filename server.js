@@ -7,7 +7,7 @@ const { Client, MessageAttachment } = require('discord.js');
 const client = new Discord.Client();
 
 client.on('ready', () => {
-  console.log('Version 1.0.5');
+  console.log('Version 1.0.6');
 });
 
 
@@ -16,6 +16,14 @@ client.on('message', message => {
     if (message.content === '!server') {
       // Send "pong" to the same channel
       message.channel.send('https://elchupaworld.aternos.me/');
+      
+    }
+  });
+  client.on('message', message => {
+    // If the message is "ping"
+    if (message.content === '!comandos') {
+      // Send "pong" to the same channel
+      message.channel.send('!server | !mods');
       
     }
   });
@@ -48,7 +56,7 @@ client.on('message', message => {
       const attachment8 = new MessageAttachment(buffer8, 'Torohealth');
       
       // Send the attachment in the message channel with a content
-      message.channel.send(`${message.author}, LISTA DE MODS:`, attachment,attachment2,attachment3,attachment4,attachment5,attachment6,attachment7,attachment8);
+      message.channel.send(`${message.author}, LISTA DE MODS:`, attachment + attachment2 + attachment3 + attachment4 +  attachment5 + attachment6 + attachment7 + attachment8);
     }
   });
 
