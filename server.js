@@ -7,7 +7,7 @@ const { Client, MessageAttachment } = require('discord.js');
 const client = new Discord.Client();
 
 client.on('ready', () => {
-  console.log('Version 1.1.0');
+  console.log('Version 1.1.1');
 });
 
 
